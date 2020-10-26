@@ -1,0 +1,13 @@
+.input-block input {
+  width: 100%;
+  border: 1px solid #777777;
+  height: 28px;
+  margin-top: 8px;
+  border-radius: 4px;
+  text-indent: 10px;
+  color: #cccccc;
+}
+
+.input-block {
+  margin-bottom: 10px;
+}

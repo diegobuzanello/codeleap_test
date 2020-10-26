@@ -1,0 +1,36 @@
+#container-signup {
+  padding: 20px;
+  width: 500px;
+  background-color: #ffffff;
+}
+
+#container-signup h1 {
+  font-size: 1.6rem;
+}
+
+#container-signup .input-block label {
+  display: flex;
+  margin-top: 24px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#splash-screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.logo {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  background-color: #dddddd;
+  font-size: 90%;
+}
+
+body {
+  background: var(--color-background);
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Roboto;
+  color: var(--color-text-base);
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}

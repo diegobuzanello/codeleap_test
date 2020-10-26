@@ -1,0 +1,23 @@
+#container-mainscreen form {
+  padding: 20px;
+}
+
+#container-mainscreen form fieldset {
+  padding: 20px;
+}
+
+#container-mainscreen form fieldset .input-block {
+  padding: 10px 0;
+}
+
+#container-mainscreen form fieldset label {
+  display: block;
+}
+
+#container-mainscreen form fieldset input {
+  width: 100%;
+}
+
+button:disabled {
+  opacity: 20%;
+}

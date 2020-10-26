@@ -1,0 +1,15 @@
+.input-block textarea {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #777777;
+
+  margin-top: 8px;
+  border-radius: 4px;
+  text-indent: 10px;
+  color: #cccccc;
+  margin-top: 12px;
+}
+
+.input-block {
+  margin-bottom: 10px;
+}

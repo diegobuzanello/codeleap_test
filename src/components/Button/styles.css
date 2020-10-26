@@ -1,0 +1,20 @@
+.contained {
+  height: 33px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  width: 90px;
+  margin-top: 12px;
+  display: block;
+  margin-left: auto;
+}
+
+.outlined {
+  height: 33px;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid black;
+  width: 90px;
+  display: block;
+  margin-left: auto;
+}
