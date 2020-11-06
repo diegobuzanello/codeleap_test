@@ -45,7 +45,6 @@ const Post = (props: any) => {
     });
   }
 
-  console.log(props);
   return (
     <div className="post">
       <div className="header">

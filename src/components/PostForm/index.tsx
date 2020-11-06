@@ -1,42 +1,30 @@
 import React, { FormEvent, useState } from "react";
-import { connect } from "react-redux";
+import { connect, useDispatch } from "react-redux";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import { TextArea } from "../TextArea";
+import { saveNewPost } from "../../actions/index";
 import "./styles.css";
 
-var id = 0;
-
-const PostForm = (props: any) => {
+const PostForm = ({ username }: any) => {
+  const dispatch = useDispatch();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  const username = props.username;
-
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    id = id + 1;
-    console.log(id);
 
     const data = {
-      // id: (Math.random() * 10).toFixed(),
-      id,
       username,
-      created_datetime: new Date(),
       title,
       content,
-      editing: false,
     };
 
-    props.dispatch({
-      type: "ADD_POST",
-      data,
-    });
+    const saveNewPostThunk = saveNewPost(data);
+    dispatch(saveNewPostThunk);
 
     setTitle("");
     setContent("");
-
-    console.log(props);
   }
 
   return (

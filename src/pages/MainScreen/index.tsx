@@ -1,33 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./styles.css";
-import { connect } from "react-redux";
+import { connect, useSelector } from "react-redux";
 
 import PostForm from "../../components/PostForm";
 import Post from "../../components/Post";
 
-import api from "../../actions/api";
+const selectPosts = (state: any) => state.data;
 
-const mapStateToProps = (state: any) => {
-  return {
-    posts: state.sort((a: any, b: any) => {
-      return b.created_datetime - a.created_datetime;
-    }),
-  };
-};
-
-function MainScreen(props: any) {
-  const username = props.location.state.username;
-
-  useEffect(() => {
-    api
-      .get("")
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+function MainScreen({ location }: any) {
+  const username = location.state.username;
+  const posts = useSelector(selectPosts);
 
   return (
     <div id="container-mainscreen">
@@ -38,7 +20,7 @@ function MainScreen(props: any) {
       <PostForm username={username} />
 
       <main>
-        {props.posts.map((post: any) => (
+        {posts.map((post: any) => (
           <div key={post.id}>
             <Post username={username} post={post} key={post.id} />
           </div>
@@ -48,4 +30,4 @@ function MainScreen(props: any) {
   );
 }
 
-export default connect(mapStateToProps)(MainScreen);
+export default connect()(MainScreen);

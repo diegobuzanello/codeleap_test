@@ -1,14 +1,16 @@
 import React, { FormEvent, useState } from "react";
 import { Button } from "../Button";
 import "./styles.css";
-import { connect } from "react-redux";
+import { connect, useDispatch } from "react-redux";
 import { Input } from "../Input";
+import { editPost } from "../../actions/index";
 
 const ModalEdit = (props: any) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const dispatch = useDispatch();
+  const id = props.idItem;
 
-  console.log("props", props);
   const showHideClassName = props.show
     ? "modal display-block"
     : "modal display-none";
@@ -21,11 +23,11 @@ const ModalEdit = (props: any) => {
       content,
     };
 
-    props.dispatch({ type: "UPDATE_POST", id: props.idItem, data: data });
+    dispatch(editPost(id, data));
 
     props.handleClose();
   }
-  console.log(props);
+
   return (
     <div className={showHideClassName}>
       <div className="container-modal">

@@ -1,13 +1,15 @@
 import React from "react";
 import { Button } from "../Button";
 import "./styles.css";
-import { connect } from "react-redux";
+import { connect, useDispatch } from "react-redux";
+import { deletePost } from "../../actions/index";
 
 const ModalDelete = (props: any) => {
+  const dispatch = useDispatch();
   const showHideClassName = props.show
     ? "modal display-block"
     : "modal display-none";
-  console.log(props);
+
   return (
     <div className={showHideClassName}>
       <div className="container-modal">
@@ -17,21 +19,9 @@ const ModalDelete = (props: any) => {
           <Button
             title="OK"
             mode="outlined"
-            onClick={() =>
-              props.dispatch({
-                type: "DELETE_POST",
-                id: props.idItem,
-              })
-            }
+            onClick={() => dispatch(deletePost(props.idItem))}
           />
         </div>
-
-        {/* <h2>Edit item</h2>
-        <Input label="Title" placeholder="Hello World" idName="content" />
-        <Input label="Content" placeholder="Content here" idName="content" />
-        <div className="buttons">
-          <Button title="SAVE" mode="contained" onClick={handleClose} />
-        </div> */}
       </div>
     </div>
   );
