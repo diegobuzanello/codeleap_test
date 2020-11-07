@@ -12,5 +12,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Project
 
-Welcome to the CodeLeap coding test!
 The goal was to create a basic CRUD using redux.
