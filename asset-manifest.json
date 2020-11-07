@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/codeleap_test/static/css/main.6f7601a8.chunk.css",
+    "main.css": "/codeleap_test/static/css/main.df9ceda1.chunk.css",
     "main.js": "/codeleap_test/static/js/main.90df99b5.chunk.js",
     "main.js.map": "/codeleap_test/static/js/main.90df99b5.chunk.js.map",
     "runtime-main.js": "/codeleap_test/static/js/runtime-main.a5211df1.js",
@@ -8,9 +8,9 @@
     "static/js/2.08623810.chunk.js": "/codeleap_test/static/js/2.08623810.chunk.js",
     "static/js/2.08623810.chunk.js.map": "/codeleap_test/static/js/2.08623810.chunk.js.map",
     "index.html": "/codeleap_test/index.html",
-    "precache-manifest.47967c2862b52f51e29b2602a29ae18f.js": "/codeleap_test/precache-manifest.47967c2862b52f51e29b2602a29ae18f.js",
+    "precache-manifest.213c59ae13d6a24873eb743cf0b1e1e9.js": "/codeleap_test/precache-manifest.213c59ae13d6a24873eb743cf0b1e1e9.js",
     "service-worker.js": "/codeleap_test/service-worker.js",
-    "static/css/main.6f7601a8.chunk.css.map": "/codeleap_test/static/css/main.6f7601a8.chunk.css.map",
+    "static/css/main.df9ceda1.chunk.css.map": "/codeleap_test/static/css/main.df9ceda1.chunk.css.map",
     "static/js/2.08623810.chunk.js.LICENSE.txt": "/codeleap_test/static/js/2.08623810.chunk.js.LICENSE.txt",
     "static/media/bx_bx-edit.svg": "/codeleap_test/static/media/bx_bx-edit.def4760f.svg",
     "static/media/codeleap_logo_black.png": "/codeleap_test/static/media/codeleap_logo_black.ac3755f2.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a5211df1.js",
     "static/js/2.08623810.chunk.js",
-    "static/css/main.6f7601a8.chunk.css",
+    "static/css/main.df9ceda1.chunk.css",
     "static/js/main.90df99b5.chunk.js"
   ]
 }
