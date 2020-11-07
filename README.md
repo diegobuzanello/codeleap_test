@@ -1,5 +1,8 @@
 <div align="center">
-        <img alt="Happy" src=".github/codeleap_logo.pmg" width="200px"  />
+        <div>
+                <img alt="Codeleap" src=".github/codeleap_logo.png" width="200px"  />
+        </div>
+        
 </div>
 
 <p align="center">
